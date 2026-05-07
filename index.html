@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Fundamentals</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #f4f4f4;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            margin: 0;
+            gap: 40px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #007bff;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 400px;
+            padding: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        form label {
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        article {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: left;
+        }
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: left;
+        }
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #ddd;
+            margin: 20px 0;
+        }
+        footer {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav style="text-align: center; background-color: lightgray"> 
+            <ul style="list-style: none; gap: 40px; display: flex; justify-content: center; padding: 20px; margin: 0;">
+                <li><a href="https://www.facebook.com">Facebook</a></li>
+                <li><a href="https://www.instagram.com">Instagram</a></li>
+                <li><a href="https://Wikipedia.org">Wikipedia</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+
+            <fieldset>
+                <legend>Gender</legend>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+            </fieldset>
+
+            <label><input type="checkbox" name="remember"> Remember me</label>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <article>
+        <h1>Hello World</h1>
+        <h2>Welcome to my website</h2>
+        <h3>This is a sample HTML document</h3>
+        <p>This is a paragraph of text<br>with a line break.</p>
+    </article>
+    <hr>
+    <section style=" padding: 20px; margin-top: 50px;">
+        <ol>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ol>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nesciunt optio eius officiis ducimus laborum temporibus explicabo pariatur aliquam beatae, at sequi perspiciatis ipsum perferendis voluptatum quia maxime doloremque, esse blanditiis fugiat nisi. Mollitia tempore esse sequi deserunt ad magni, eveniet distinctio dolores, rerum eum quasi voluptatibus nesciunt quod quibusdam deleniti architecto eius, consequatur odio omnis. Autem quas error, ipsum deleniti veritatis magnam nemo velit quam modi voluptas fugiat perspiciatis ex atque odit voluptatem quo quibusdam, eligendi similique repellat? Enim incidunt quam eveniet inventore possimus id! Iure necessitatibus dolorem harum quam ducimus praesentium? Similique porro, accusantium saepe voluptates sed officia.
+    </section>
+    <footer style="background-color: lightgray; padding: 20px; margin-top: 150px;">
+        <p>&copy; 2026 Lastmiles</p>
+    </footer>
+</body>
+</html>
